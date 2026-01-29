@@ -1,3 +1,76 @@
-h1 {
-  background-color: antiquewhite;
+section {
+  padding: 10px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+div {
+  box-sizing: border-box;
+  background-color: rgb(167, 167, 167);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.logo-div {
+  height: 100px;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.header-div,
+.intro-div {
+  height: 150px;
+}
+.body-div {
+  background-color: transparent;
+  display: flex;
+  gap: 10px;
+}
+.body-div > div {
+  height: 500px;
+}
+.body-div > div:first-child {
+  width: 30%;
+}
+.body-div > div:nth-child(2) {
+  width: 70%;
+}
+
+.section2 > .body-div > div {
+  height: 500px;
+  width: 33%;
+}
+.sidebar {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 20px;
+  background-color: transparent;
+}
+.mid-right-div {
+  flex-direction: column;
+  background-color: transparent;
+  gap: 10px;
+}
+.mid-right-div > div:first-child {
+  width: 100%;
+  height: 30%;
+}
+.mid-right-div > div:nth-child(2) {
+  width: 100%;
+  height: 70%;
+}
+.grid-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: transparent;
+}
+.grid-div > div {
+  width: 100%;
+  height: 100px;
+}
+.fourth-section > .body-div > div {
+  height: 200px;
+  width: 33%;
 }
