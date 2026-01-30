@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      div {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .upper-nav {
+        background-color: #212121;
+        color: white;
+        padding: 10px;
+      }
+      .nav-left > span {
+        background-color: #303030;
+        width: 30px;
+        height: 30px;
+        margin: 0 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+      .nav-right {
+        gap: 20px;
+      }
+      button {
+        padding: 4px 8px;
+        border: 0px;
+        border-radius: 2px;
+      }
+      .nav-right > button {
+        background-color: #a1d84c;
+        padding: 4px 8px;
+        border: 0px;
+        border-radius: 30px;
+      }
+      .nav-right > ul {
+        display: flex;
+      }
+      .nav-right li {
+        list-style: none;
+        padding: 0 5px;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        text-transform: uppercase;
+      }
+      .lower-nav {
+        padding: 10px;
+      }
+      .nav-right li:hover {
+        border-color: #febd19;
+      }
+      header {
+        background-color: #a1d84c;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        text-align: center;
+        background-image: url("./header-bg.jpg");
+      }
+      header h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      header h6 {
+        max-width: 80%;
+      }
+      header button {
+        background-color: #febd19;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #e89116;
+        text-transform: uppercase;
+      }
+      .advantages-div {
+        padding: 40px 20px;
+        min-height: 300px;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .advantages-div > div:first-child {
+        flex-direction: column;
+        text-align: center;
+      }
+      .advantages-div > div:nth-child(2) {
+        flex-wrap: wrap;
+        justify-content: start;
+      }
+      .card {
+        flex-direction: column;
+        width: 150px;
+        text-align: center;
+        gap: 10px;
+        margin: 10px 0;
+      }
+      .advantages-div p {
+        max-width: 80%;
+        font-size: 12px;
+      }
+      .icon {
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #c5c2c2;
+      }
+      .about-div {
+        min-height: 100px;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 20px;
+        background-image: url("./about-bg.jpg");
+      }
+      .about-div > div > div {
+        flex: 1;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+      }
+      .about-div button {
+        background-color: #febd19;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0;
+      }
+      .footer {
+        background-color: #424242;
+        color: white;
+        align-items: flex-start;
+        padding: 20px 40px;
+      }
+      .footer > div {
+        flex: 1;
+        align-items: start;
+        gap: 15px;
+        min-width: 400px;
+      }
+      .footer > div:first-child {
+        flex-direction: column;
+        min-width: 50px;
+        max-width: 200px;
+      }
+      .footer > div:first-child > p {
+        flex: 1;
+      }
+      .footer > div:nth-child(2) {
+        align-items: start;
+        gap: 40px;
+        flex: 0;
+      }
+      .footer > div > div {
+        min-width: fit-content;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .footer h2 {
+        font-size: 26px;
+        margin: 0;
+      }
+      .footer p {
+        font-size: 14px;
+        margin: 0;
+      }
+      .footer ul {
+        margin: 0;
+      }
+      .footer li {
+        list-style: none;
+        padding: 2px 0;
+      }
+      .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!----------------------- 1 ----------------------->
+    <nav>
+      <div class="upper-nav">
+        <div class="nav-left">
+          <span>f</span>
+          <span>t</span>
+          <span>g</span>
+          <span>in</span>
+        </div>
+        <div class="nav-right">
+          <span>+91 9876512345</span>
+          <button>CALL ME</button>
+        </div>
+      </div>
+      <div class="lower-nav">
+        <div class="nav-left">
+          <h2>AGENCY</h2>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li>why us</li>
+            <li>about</li>
+            <li class="active-link">services</li>
+            <li>portfolio</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!----------------------- 2 ----------------------->
+    <header>
+      <h1>we are expert</h1>
+      <h6>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, natus
+        nisi rerum unde in similique aperiam sequi aliquid. Neque consectetur
+        quas possimus
+      </h6>
+      <button><h3>read more</h3></button>
+    </header>
+    <!----------------------- 3 ----------------------->
+    <div class="advantages-div">
+      <div>
+        <h1>OUR ADVANTAGES</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          voluptatem!
+        </p>
+      </div>
+      <div>
+        <div class="card">
+          <div class="icon">icon</div>
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="card">
+          <div class="icon">icon</div>
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="card">
+          <div class="icon">icon</div>
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="card">
+          <div class="icon">icon</div>
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="card">
+          <div class="icon">icon</div>
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+      </div>
+    </div>
+    <!----------------------- 4 ----------------------->
+    <div class="about-div">
+      <h1>ABOUT US</h1>
+      <div class="outer-box">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iusto,
+            quibusdam ipsa exercitationem ex blanditiis odio esse de
+            <br />
+            <br />
+            illum! Distinctio explicabo, labore eum tenetur porro obcaecati,
+            eveniet alias
+            <br />
+            <br />
+            quisquam quidem commodi modi accusamus voluptas harum cupiditate
+            blanditiis Quae, aliquid?
+          </p>
+          <button>READ MORE</button>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <!----------------------- 5 ----------------------->
+    <div class="footer">
+      <div>
+        <h2>AGENCY</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad sit
+          suscipit iure possimus.
+        </p>
+        <p>@Agency 2016</p>
+      </div>
+
+      <div>
+        <div>
+          <h2>USEFULL LINKS</h2>
+          <ul>
+            <li>Links</li>
+            <li>Links</li>
+            <li>Links</li>
+            <li>Links</li>
+            <li>Links</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>CONTANCT</h2>
+          <div class="contact-info">
+            <p>+91 9078564565</p>
+            <p>+91 9078564565</p>
+            <p>email@gamil.com</p>
+            <h2>FOLLOW US</h2>
+            <div class="nav-left">
+              <span>f</span>
+              <span>t</span>
+              <span>g</span>
+              <span>y</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
